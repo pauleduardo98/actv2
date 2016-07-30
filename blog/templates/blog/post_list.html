@@ -1,0 +1,7 @@
+{% for post in postsblog %}
+<div>
+	<p>publish : {{ post.published_date }}</p>
+	<h1><a href="">{{post.titleblog}}</a></h1>
+	<p>{{post.textblog|linebreaksbr}}</p>
+</div>
+{% endfor %}
